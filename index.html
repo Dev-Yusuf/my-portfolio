@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev-Yusuf</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media_query.css">
+
+  <!--
+    - google font link
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Jost:regular,500,800" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+  <!--
+    - container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <!--
+        - navbar toggle open button
+      -->
+
+      <button class="menu-open-btn">
+        <span>Menu</span>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="nav">
+
+        <button class="menu-close-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <h4 class="nav-heading">Menu</h4>
+
+        <ul>
+
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#news" class="nav-link">News & Tips</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+
+
+        <div class="nav-footer">
+
+          <ul class="social-link">
+
+            <li>
+              <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+
+           <li>
+              <a href="#">
+                <ion-icon name="logo-WhatsApp"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </nav>
+
+
+      <!--
+        - header intro
+      -->
+
+      <section class="intro section-padding">
+
+        <div class="intro-profile">
+
+          <div class="intro-border one"></div>
+          <div class="intro-border two"></div>
+
+          <div class="img-box">
+            <img src="images/passport.jpg" alt="" class="intro-img" width="100%" loading="lazy">
+          </div>
+
+          <p>Hi there! I am</p>
+
+          <div class="profile-name">
+            <span>[</span>
+            <div>Dauda Yusuf</div>
+            <span>]</span>
+          </div>
+
+        </div>
+
+        <a href="#contact" class="intro-link">
+          <span class="circle"></span>
+          <span class="link-underline">I’m available for intern/job. Hire me</span>
+        </a>
+
+      </section>
+
+    </header>
+
+    <main>
+
+      <!--
+        - #HOME
+      -->
+
+      <section class="section-padding" id="home">
+
+        <h3 class="section-subtitle">Welcome to my portfolio</h3>
+
+        <h2 class="section-title">Backend Developer</h2>
+
+        <p class="section-desc">I'm a backend web developer that focus on python, django, Html and css</p>
+         .</p>
+      </section>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <section class="section-padding" id="about">
+
+        <h3 class="section-subtitle">About me</h3>
+
+        <p class="section-desc">
+          A third-year undergraduate Statistics student at Abubakar Tafawa Balewa University Bauchi.
+          I'm a Backend developer using python as my main programming language and with much emphasis on
+          django as my backend framework with two years of experience. 
+          I have also worked with HTML, CSS, and javascript. Seeking for internship/job
+          where I can apply my knowledge and experience to solving the problems at hand.
+
+        </p>
+
+        <div class="about-tab">
+
+          <ul class="tab-nav">
+
+            <li>
+              <button class="one tab-button active">Experience</button>
+            </li>
+          </ul>
+
+          <div class="tab-content-group">
+
+            <div class="one tab-content active">
+
+              <div class="content-card">
+
+                <div class="card-head">
+                  <h4>HTML <br>
+                      CSS <br>
+                      Python <br>
+                      Django
+                  </h4>
+                </div>
+
+              
+
+
+              </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <section class="section-padding" id="portfolio">
+
+        <h3 class="section-subtitle">Portfolio</h3>
+
+        <div class="wrapper">
+
+          <h2 class="section-title">Projects and project colabs</h2>
+
+          <div class="btn-group">
+            <button id="portfolio-carousel-prev">
+              <div class="arrow">
+                <div class="arrow-head-left"></div>
+              </div>
+            </button>
+
+            <button id="portfolio-carousel-next">
+              <div class="arrow">
+                <div class="arrow-head-right"></div>
+              </div>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="portfolio-carousel">
+
+          <div class="portfolio-carousel-inner">
+
+            <div class="portfolio-carousel-card">
+
+              <div class="card-head">
+                <img src="./assets/images/slider-1.jpg" alt="" class="slider-img" width="100%" loading="lazy">
+              </div>
+
+              <div class="card-body">
+                <p>illustration, design</p>
+                <h4><a href="#">Sweet Cherry</a></h4>
+              </div>
+
+            </div>
+
+
+            <div class="portfolio-carousel-card">
+
+              <div class="card-head">
+                <img src="./assets/images/slider-2.jpg" alt="" class="slider-img" width="100%" loading="lazy">
+              </div>
+
+              <div class="card-body">
+                <p>web, mobile, online</p>
+                <h4><a href="#">Delicious Fruit</a></h4>
+              </div>
+
+            </div>
+
+
+            <div class="portfolio-carousel-card">
+
+              <div class="card-head">
+                <img src="./assets/images/slider-3.jpg" alt="" class="slider-img" width="100%" loading="lazy">
+              </div>
+
+              <div class="card-body">
+                <p>design, vector</p>
+                <h4><a href="#">Blue Lemon</a></h4>
+              </div>
+
+            </div>
+
+
+            <div class="portfolio-carousel-card">
+
+              <div class="card-head">
+                <img src="./assets/images/slider-4.jpg" alt="" class="slider-img" width="100%" loading="lazy">
+              </div>
+
+              <div class="card-body">
+                <p>mobile, design</p>
+                <h4><a href="#">Yellow Phone</a></h4>
+              </div>
+
+            </div>
+
+
+            <div class="portfolio-carousel-card">
+
+              <div class="card-head">
+                <img src="./assets/images/slider-5.jpg" alt="" class="slider-img" width="100%" loading="lazy">
+              </div>
+
+              <div class="card-body">
+                <p>mobile, design</p>
+                <h4><a href="#">Ice Cream</a></h4>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #SERVICES
+      -->
+
+      <section class="section-padding" id="services">
+
+        <h3 class="section-subtitle">Services</h3>
+
+        <h2 class="section-title">What I Do</h2>
+
+        <p class="section-desc"> Developing webApp using django and python. </p>
+           .</p>
+
+
+      </section>
+
+
+
+
+
+      
+      
+      
+       
+      <section class="section-padding" id="customers">
+       <!--
+        <h3 class="section-subtitle">Customers</h3>
+
+        <h2 class="section-title">Happy People</h2>
+
+        <div class="wrapper">
+
+          <a href="#">
+            <div class="img-box">
+              <img src="./assets/images/client-1.png" alt="" width="160px" loading="lazy">
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="img-box">
+              <img src="./assets/images/client-2.png" alt="" width="160px" loading="lazy">
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="img-box">
+              <img src="./assets/images/client-3.png" alt="" width="160px" loading="lazy">
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="img-box">
+              <img src="./assets/images/client-4.png" alt="" width="160px" loading="lazy">
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="img-box">
+              <img src="./assets/images/client-5.png" alt="" width="160px" loading="lazy">
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="img-box">
+              <img src="./assets/images/client-6.png" alt="" width="160px" loading="lazy">
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="img-box">
+              <img src="./assets/images/client-7.png" alt="" width="160px" loading="lazy">
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="img-box">
+              <img src="./assets/images/client-5.png" alt="" width="160px" loading="lazy">
+            </div>
+          </a>
+
+        </div>
+       -->
+        <div class="testimonials">
+          <h3 class="section-subtitle">Testimonials</h3>
+          <div class="testimonials-content">
+            <p>
+              “ I needed a logo for my personal website and products, I entrusted them with
+              it and i got an amazing and fantastic work done. Great! ”
+            </p>
+
+            <div class="title">Dauda Yusuf</div>
+            <div class="subtitle">Customer</div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #NEWS & TIPS
+      -->
+
+      <section class="section-padding" id="news">
+
+        <h3 class="section-subtitle">News & Tips</h3>
+
+        <h2 class="section-title">Latest Articles</h2>
+
+        <div class="article-grid">
+
+          <article class="article-box">
+
+            <div class="img-box">
+              <img src="./assets/images/article-1.jpg" alt="" width="100%" loading="lazy">
+            </div>
+
+            <p class="publish-date">September 22, 2021</p>
+
+            <h3 class="article-name">
+              <a href="#">Five Solid Evidences Attending Design Is Good For Your Career Development.</a>
+            </h3>
+
+          </article>
+
+
+          <article class="article-box">
+
+            <div class="img-box">
+              <img src="./assets/images/article-2.jpg" alt="" width="100%" loading="lazy">
+            </div>
+
+            <p class="publish-date">September 17, 2021</p>
+
+            <h3 class="article-name">
+              <a href="#">Ten Mind-Blowing Reasons Why Design Is Using This Technique For Exposure.</a>
+            </h3>
+
+          </article>
+
+
+          <article class="article-box">
+
+            <div class="img-box">
+              <img src="./assets/images/article-3.jpg" alt="" width="100%" loading="lazy">
+            </div>
+
+            <p class="publish-date">September 04, 2021</p>
+
+            <h3 class="article-name">
+              <a href="#">I Will Tell You The Truth About Design In The Next 60 Seconds.</a>
+            </h3>
+
+          </article>
+
+
+          <article class="article-box">
+
+            <div class="img-box">
+              <img src="./assets/images/article-4.jpg" alt="" width="100%" loading="lazy">
+            </div>
+
+            <p class="publish-date">August 18, 2021</p>
+
+            <h3 class="article-name">
+              <a href="#">What You Know About Design And What You Don't Know About Design.</a>
+            </h3>
+
+          </article>
+
+        </div>
+
+        <button class="load-more">Load More Articles</button>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <section class="section-padding" id="contact">
+
+        <h3 class="section-subtitle">Contact</h3>
+
+        <h2 class="section-title">Get In Touch</h2>
+
+        <p class="section-desc">If you have any suggestion, project or even you want to say “hello”, please
+          fill out the form below and I will reply you shortly.</p>
+
+
+        <form action="#" class="contact-form">
+
+          <div class="wrapper">
+
+            <div>
+              <label for="name">Name *</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+
+            <div>
+              <label for="email">Email *</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="8"></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+
+        </form>
+
+        <div class="address">
+          <h4>Address</h4>
+          <address>Sebima Table water. Ankpa kogi state</address>
+        </div>
+
+        <div class="phone">
+          <h4>Phone</h4>
+          <a href="tel:+1234567890">(+234)90435778</a>
+        </div>
+
+        <div class="email">
+          <a href="mailto:halimatmohammed@gmail.com" class="link-underline">halimatmohammed@gmail.com</a>
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #FOOTER
+      -->
+
+      <div class="footer">
+
+        <a href="#home" class="go-top">
+          <div class="arrow">
+            <div class="arrow-head"></div>
+          </div>
+        </a>
+
+        <p class="copyright">
+          Copyright © 2021. All rights reserved.
+          <br>
+          Theme by <a href="#" class="link-underline">codewithsadee</a>
+          Backend service by <a href="#" class="link-underline">Dev-Yusuf</a>
+        </p>
+
+      </div>
+
+    </main>
+
+  </div>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+
+  <!--
+   - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
